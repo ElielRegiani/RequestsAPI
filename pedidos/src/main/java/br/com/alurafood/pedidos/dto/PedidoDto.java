@@ -1,8 +1,10 @@
 package br.com.alurafood.pedidos.dto;
 
 import br.com.alurafood.pedidos.model.Status;
-import lombok.*;
-
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +19,5 @@ public class PedidoDto {
     private LocalDateTime dataHora;
     private Status status;
     private List<ItemDoPedidoDto> itens = new ArrayList<>();
-
-
 
 }
